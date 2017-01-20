@@ -1,7 +1,7 @@
 {
-  "name": "__BONES_NEEDS_A_NAME__",
+  "name": "Figaro",
   "version": "0.0.1",
-  "description": "A happy little skeleton.",
+  "description": "A dynamic journaling application for INFJs.",
   "main": "index.js",
   "scripts": {
     "test": "check-node-version --node '>= 6.7.0' && bin/setup && mocha --compilers js:babel-register app/**/*.test.js app/**/*.test.jsx db/**/*.test.js server/**/*.test.js",
@@ -15,19 +15,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/queerviolet/bones.git"
+    "url": "https://github.com/chloerice/figaro.git"
   },
   "keywords": [
     "react",
     "redux",
-    "skeleton"
+    "meyers",
+    "briggs",
+    "infj",
+    "progressive",
+    "pwa"
   ],
-  "author": "Ashi Krishnan <me@ashi.works>",
+  "author": "Chloe Rice, (skeleton, Bones, by Ashi Krishnan <me@ashi.works>)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/queerviolet/bones/issues"
+    "url": "https://www.figaro.io"
   },
-  "homepage": "https://github.com/queerviolet/bones#readme",
   "dependencies": {
     "axios": "^0.15.2",
     "babel-preset-stage-2": "^6.18.0",
