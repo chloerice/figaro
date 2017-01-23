@@ -5,16 +5,18 @@ import { render } from 'react-dom'
 import { connect, Provider } from 'react-redux'
 
 import store from './store'
-import Login from './components/Login'
-import WhoAmI from './components/WhoAmI'
+import Login from './components/users/Login'
+import WhoAmI from './components/users/WhoAmI'
 
-const App = connect(({ auth }) => ({ user: auth }))(({ user, children }) =>
-    <div>
-      <nav>
-        { user ? <WhoAmI/> : <Login/> }
-      </nav>
-      {children}
-    </div>
+const mapState = (state) => ({ user: state.auth })
+
+const App = connect(mapState)((props) =>
+  <div>
+    <nav>
+      { props.user ? <WhoAmI/> : <Login/> }
+    </nav>
+    { props.children }
+  </div>
 )
 
 render(
